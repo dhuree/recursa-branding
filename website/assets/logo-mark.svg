@@ -1,0 +1,10 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer ring -->
+  <circle cx="32" cy="32" r="28" stroke="#4F46E5" stroke-width="3"/>
+
+  <!-- Inner recursive star/loop shape -->
+  <path d="M32 12C32 22.8366 22.8366 32 12 32C22.8366 32 32 41.1634 32 52C32 41.1634 41.1634 32 52 32C41.1634 32 32 22.8366 32 12Z" fill="#4F46E5"/>
+
+  <!-- Center dot for depth -->
+  <circle cx="32" cy="32" r="4" fill="#7C3AED"/>
+</svg>

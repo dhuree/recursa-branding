@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation — Recursa</title>
+    <meta name="description" content="Learn how to build self-improving systems with Recursa. Quick start guide, core concepts, and API reference.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 8C16 12.4183 12.4183 16 8 16C12.4183 16 16 19.5817 16 24C16 19.5817 19.5817 16 24 16C19.5817 16 16 12.4183 16 8Z" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">Recursa</span>
+            </a>
+            <div class="nav-links">
+                <a href="/#how-it-works">How It Works</a>
+                <a href="/#examples">Examples</a>
+                <a href="https://github.com/dhuree/recursa" target="_blank" rel="noopener">GitHub</a>
+                <a href="/docs.html" class="nav-cta">Get Started</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="docs-layout">
+            <!-- Sidebar -->
+            <aside class="docs-sidebar">
+                <ul class="docs-nav">
+                    <li><a href="#quick-start" class="active">Quick Start</a></li>
+                    <li><a href="#core-concepts">Core Concepts</a></li>
+                    <li><a href="#the-loop">The Loop</a></li>
+                    <li><a href="#files">Core Files</a></li>
+                    <li><a href="#bootstrapping">Bootstrapping</a></li>
+                    <li><a href="#cli">CLI Reference</a></li>
+                    <li><a href="#examples">Examples</a></li>
+                </ul>
+            </aside>
+
+            <!-- Content -->
+            <div class="docs-content">
+                <h1>Documentation</h1>
+                <p class="section-subtitle">Everything you need to build self-improving systems with Recursa.</p>
+
+                <h2 id="quick-start">Quick Start</h2>
+                <p>Get up and running in under 5 minutes.</p>
+
+                <h3>1. Clone the repository</h3>
+                <pre><code>git clone https://github.com/dhuree/recursa.git
+cd recursa</code></pre>
+
+                <h3>2. Open with your AI assistant</h3>
+                <p>Recursa works with any AI assistant that can read files: Claude Code, Cursor, Windsurf, Cline, or others.</p>
+
+                <h3>3. Bootstrap your project</h3>
+                <p>Tell your AI assistant:</p>
+                <pre><code>Bootstrap a self-improving blog system at ~/my-blog</code></pre>
+                <p>The assistant will ask you questions about your domain, then generate customized templates.</p>
+
+                <h3>4. Start iterating</h3>
+                <p>Navigate to your new project and follow the <code>LOOP.md</code> file for each iteration.</p>
+
+                <h2 id="core-concepts">Core Concepts</h2>
+
+                <h3>Self-Improving Systems</h3>
+                <p>Traditional systems follow a simple pattern:</p>
+                <pre><code>Input → Process → Output</code></pre>
+                <p>Self-improving systems add feedback loops:</p>
+                <pre><code>Input → Process → Output → Evaluate → Learn → Improve ↩</code></pre>
+                <p>Recursa provides the architecture to implement these loops in any domain.</p>
+
+                <h3>The Seven Layers</h3>
+                <p>Recursa systems are built on seven architectural layers:</p>
+                <ol>
+                    <li><strong>Foundation</strong> — Core reasoning (human, AI, or hybrid)</li>
+                    <li><strong>Identity</strong> — Values, principles, behavioral guidelines</li>
+                    <li><strong>Memory</strong> — Tiered knowledge storage</li>
+                    <li><strong>Tools</strong> — Extensible capabilities</li>
+                    <li><strong>Reflection</strong> — Self-evaluation and feedback</li>
+                    <li><strong>Orchestration</strong> — Multi-component coordination</li>
+                    <li><strong>Safety</strong> — Guardrails, audit, rollback</li>
+                </ol>
+
+                <h2 id="the-loop">The Loop</h2>
+                <p>Every Recursa system has an iteration cycle defined in <code>LOOP.md</code>. The basic structure:</p>
+                <ol>
+                    <li><strong>Prepare</strong> — Load context, check memory</li>
+                    <li><strong>Execute</strong> — Do the work</li>
+                    <li><strong>Evaluate</strong> — Assess quality against metrics</li>
+                    <li><strong>Capture</strong> — Document learnings</li>
+                    <li><strong>Improve</strong> — Update process for next iteration</li>
+                </ol>
+
+                <h3>Nested Loops</h3>
+                <p>Self-improvement happens at multiple timescales:</p>
+                <ul>
+                    <li><strong>Task loop</strong> (minutes) — Execute, evaluate, retry</li>
+                    <li><strong>Session loop</strong> (hours) — Complete work, summarize</li>
+                    <li><strong>Skill loop</strong> (days) — Recognize patterns, abstract</li>
+                    <li><strong>Identity loop</strong> (weeks) — Analyze trends, evolve</li>
+                </ul>
+
+                <h2 id="files">Core Files</h2>
+
+                <h3>Identity Layer</h3>
+                <ul>
+                    <li><code>SOUL.md</code> — Core identity, values, philosophy</li>
+                    <li><code>CONSTITUTION.md</code> — Inviolable rules</li>
+                    <li><code>IDENTITY.md</code> — Name, personality, presentation</li>
+                </ul>
+
+                <h3>Operational Layer</h3>
+                <ul>
+                    <li><code>LOOP.md</code> — The iteration cycle</li>
+                    <li><code>METRICS.md</code> — Success measurements</li>
+                    <li><code>LEARNING.md</code> — Accumulated knowledge</li>
+                    <li><code>GOALS.md</code> — Current objectives</li>
+                </ul>
+
+                <h3>Safety Layer</h3>
+                <ul>
+                    <li><code>GUARDRAILS.md</code> — Safety infrastructure</li>
+                    <li><code>action_log.jsonl</code> — Audit trail</li>
+                </ul>
+
+                <h2 id="bootstrapping">Bootstrapping a Project</h2>
+
+                <h3>The Interview</h3>
+                <p>When you bootstrap, Recursa asks six key questions:</p>
+                <ol>
+                    <li>What is this system for?</li>
+                    <li>What is one cycle of work?</li>
+                    <li>How do you measure success?</li>
+                    <li>What should never happen?</li>
+                    <li>What can be learned?</li>
+                    <li>What personality should it have?</li>
+                </ol>
+
+                <h3>Generated Structure</h3>
+                <pre><code>your-project/
+├── system/           # Identity & governance
+│   ├── SOUL.md
+│   ├── CONSTITUTION.md
+│   └── IDENTITY.md
+├── docs/             # Operational guides
+│   ├── LOOP.md
+│   ├── METRICS.md
+│   └── LEARNING.md
+├── guardrails/       # Safety
+├── memory/           # Knowledge storage
+└── deliverables/     # Outputs</code></pre>
+
+                <h2 id="cli">CLI Reference</h2>
+                <pre><code># Initialize a new project
+python tools/recursa.py init ~/my-project
+
+# Validate project structure
+python tools/recursa.py validate ~/my-project
+
+# Check project status
+python tools/recursa.py status ~/my-project
+
+# Log an action
+python tools/recursa.py log ~/my-project -a "edit" -m "Updated SOUL.md"
+
+# Check for migrations
+python tools/recursa.py migrate ~/my-project</code></pre>
+
+                <h2 id="examples">Example Projects</h2>
+
+                <h3>Minimal Blog Writer</h3>
+                <p>A technical blog system that:</p>
+                <ul>
+                    <li>Generates draft posts based on topics</li>
+                    <li>Self-reviews for quality and accuracy</li>
+                    <li>Tracks which content resonates</li>
+                    <li>Improves writing over time</li>
+                </ul>
+
+                <h3>Code Review System</h3>
+                <p>A PR review bot that:</p>
+                <ul>
+                    <li>Analyzes code changes</li>
+                    <li>Provides feedback based on learned patterns</li>
+                    <li>Tracks accepted vs. rejected suggestions</li>
+                    <li>Improves review quality iteratively</li>
+                </ul>
+
+                <h3>Research Assistant</h3>
+                <p>A literature review system that:</p>
+                <ul>
+                    <li>Searches and reads papers</li>
+                    <li>Synthesizes findings</li>
+                    <li>Builds domain knowledge over time</li>
+                    <li>Identifies research gaps</li>
+                </ul>
+
+                <div style="margin-top: var(--space-3xl); padding: var(--space-xl); background: var(--color-bg-alt); border-radius: var(--radius-lg);">
+                    <h3>Ready to build?</h3>
+                    <p>Clone the repo and bootstrap your first self-improving system.</p>
+                    <a href="https://github.com/dhuree/recursa" class="btn btn-primary" style="margin-top: var(--space-md);">
+                        View on GitHub
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" style="margin-top: var(--space-4xl);">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="nav-logo">
+                        <svg class="logo-mark" width="24" height="24" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 8C16 12.4183 12.4183 16 8 16C12.4183 16 16 19.5817 16 24C16 19.5817 19.5817 16 24 16C19.5817 16 16 12.4183 16 8Z" fill="currentColor"/>
+                        </svg>
+                        <span>Recursa</span>
+                    </a>
+                    <p>Systems that learn to improve themselves.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="/docs.html">Documentation</a>
+                        <a href="/#examples">Examples</a>
+                        <a href="https://github.com/dhuree/recursa">GitHub</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Community</h4>
+                        <a href="https://github.com/dhuree/recursa/discussions">Discussions</a>
+                        <a href="https://github.com/dhuree/recursa/issues">Issues</a>
+                        <a href="https://twitter.com/recursa">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>MIT License — Built with Recursa (naturally)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/main.js"></script>
+</body>
+</html>

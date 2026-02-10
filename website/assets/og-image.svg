@@ -1,0 +1,29 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#1E1B4B"/>
+
+  <!-- Gradient overlay -->
+  <defs>
+    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:0.1" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#gradient)"/>
+
+  <!-- Decorative rings -->
+  <circle cx="900" cy="315" r="200" stroke="#4F46E5" stroke-width="2" opacity="0.3"/>
+  <circle cx="900" cy="315" r="150" stroke="#4F46E5" stroke-width="2" opacity="0.4"/>
+  <circle cx="900" cy="315" r="100" stroke="#4F46E5" stroke-width="2" opacity="0.5"/>
+
+  <!-- Logo mark -->
+  <circle cx="900" cy="315" r="50" stroke="#4F46E5" stroke-width="3"/>
+  <path d="M900 280C900 297.673 885.673 312 868 312C885.673 312 900 326.327 900 344C900 326.327 914.327 312 932 312C914.327 312 900 297.673 900 280Z" fill="#4F46E5"/>
+
+  <!-- Text -->
+  <text x="100" y="280" font-family="Inter, -apple-system, sans-serif" font-size="72" font-weight="700" fill="#FAFAFA">Recursa</text>
+  <text x="100" y="360" font-family="Inter, -apple-system, sans-serif" font-size="32" fill="#94A3B8">Systems that learn to improve themselves</text>
+
+  <!-- URL -->
+  <text x="100" y="550" font-family="Inter, -apple-system, sans-serif" font-size="24" fill="#64748B">github.com/dhuree/recursa</text>
+</svg>

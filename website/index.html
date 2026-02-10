@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursa — Systems that learn to improve themselves</title>
+    <meta name="description" content="A meta-framework for building self-improving systems. Define your loop, track your learnings, evolve your process.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Recursa — Systems that learn to improve themselves">
+    <meta property="og:description" content="A meta-framework for building self-improving systems.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://recursa.dev">
+    <meta property="og:image" content="/assets/og-image.png">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Recursa — Systems that learn to improve themselves">
+    <meta name="twitter:description" content="A meta-framework for building self-improving systems.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/main.css">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">
+                <svg class="logo-mark" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                    <path d="M16 8C16 12.4183 12.4183 16 8 16C12.4183 16 16 19.5817 16 24C16 19.5817 19.5817 16 24 16C19.5817 16 16 12.4183 16 8Z" fill="currentColor"/>
+                </svg>
+                <span class="logo-text">Recursa</span>
+            </a>
+            <div class="nav-links">
+                <a href="#how-it-works">How It Works</a>
+                <a href="#examples">Examples</a>
+                <a href="https://github.com/dhuree/recursa" target="_blank" rel="noopener">GitHub</a>
+                <a href="/docs.html" class="nav-cta">Get Started</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <div class="hero-container">
+            <h1 class="hero-title">
+                Systems that learn to<br>
+                <span class="gradient-text">improve themselves</span>
+            </h1>
+            <p class="hero-subtitle">
+                Recursa is a meta-framework for building feedback loops into anything you build.
+                Define your process, track your outcomes, capture your learnings—and watch your system evolve.
+            </p>
+            <div class="hero-cta">
+                <a href="https://github.com/dhuree/recursa" class="btn btn-primary">
+                    Get Started
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+                <a href="#examples" class="btn btn-secondary">View Examples</a>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="loop-animation">
+                <div class="loop-ring loop-ring-1"></div>
+                <div class="loop-ring loop-ring-2"></div>
+                <div class="loop-ring loop-ring-3"></div>
+                <div class="loop-center">
+                    <span>∞</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Problem/Solution -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="two-col">
+                <div class="col">
+                    <h2 class="section-label">The Problem</h2>
+                    <h3 class="section-title">Most systems stay the same</h3>
+                    <p class="section-text">
+                        Input goes in, output comes out, nothing changes.
+                        Every project starts with good intentions to improve,
+                        but without structure, learnings get lost.
+                    </p>
+                    <div class="flow-diagram flow-static">
+                        <div class="flow-node">Input</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-node">Process</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-node">Output</div>
+                    </div>
+                </div>
+                <div class="col">
+                    <h2 class="section-label">The Solution</h2>
+                    <h3 class="section-title">Self-improving systems learn</h3>
+                    <p class="section-text">
+                        They evaluate their outputs, learn from results,
+                        and adjust their process. They compound intelligence
+                        through structured reflection.
+                    </p>
+                    <div class="flow-diagram flow-loop">
+                        <div class="flow-node">Input</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-node">Process</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-node">Output</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-node highlight">Evaluate</div>
+                        <div class="flow-arrow">→</div>
+                        <div class="flow-node highlight">Learn</div>
+                        <div class="flow-curve">↩</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section id="how-it-works" class="section">
+        <div class="container">
+            <h2 class="section-title center">How Recursa Works</h2>
+            <p class="section-subtitle center">Four files. Infinite improvement.</p>
+
+            <div class="features">
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 4V20M4 12H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>LOOP.md</h3>
+                    <p>Define your iteration cycle. What's one unit of work? What happens each time?</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M4 6H20M4 12H20M4 18H12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>METRICS.md</h3>
+                    <p>Track what matters. Quantify success so improvement becomes measurable.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                            <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>LEARNING.md</h3>
+                    <p>Capture accumulated knowledge. What you learn persists across iterations.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>SOUL.md</h3>
+                    <p>Establish identity and values. Consistent behavior across decisions.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Examples -->
+    <section id="examples" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title center">Built with Recursa</h2>
+            <p class="section-subtitle center">Self-improving systems for any domain.</p>
+
+            <div class="examples">
+                <div class="example">
+                    <h3>Blog Writer</h3>
+                    <p>Technical blog that learns what content resonates, improves drafts through self-review, and tracks quality over time.</p>
+                    <span class="example-tag">Content</span>
+                </div>
+                <div class="example">
+                    <h3>Code Review System</h3>
+                    <p>PR review bot that learns from accepted/rejected suggestions and improves its feedback quality iteration by iteration.</p>
+                    <span class="example-tag">Development</span>
+                </div>
+                <div class="example">
+                    <h3>Research Assistant</h3>
+                    <p>Literature review system that tracks useful sources, learns synthesis patterns, and builds domain knowledge.</p>
+                    <span class="example-tag">Research</span>
+                </div>
+                <div class="example">
+                    <h3>Personal CRM</h3>
+                    <p>Contact management that learns outreach timing, tracks relationship quality, and improves follow-up strategies.</p>
+                    <span class="example-tag">Personal</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Recursa -->
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title center">Why Recursa</h2>
+
+            <div class="benefits">
+                <div class="benefit">
+                    <span class="benefit-icon">→</span>
+                    <div>
+                        <h4>Framework-agnostic</h4>
+                        <p>Works with any AI assistant—Claude Code, Cursor, Windsurf—or just plain markdown.</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">→</span>
+                    <div>
+                        <h4>Domain-agnostic</h4>
+                        <p>Blog writing, code review, research, CRM, learning—anything that iterates.</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">→</span>
+                    <div>
+                        <h4>Principled architecture</h4>
+                        <p>Based on seven layers from foundation to safety, designed for real-world use.</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">→</span>
+                    <div>
+                        <h4>Actually open source</h4>
+                        <p>MIT license, no strings attached. Use it, fork it, make it yours.</p>
+                    </div>
+                </div>
+                <div class="benefit">
+                    <span class="benefit-icon">→</span>
+                    <div>
+                        <h4>Built recursively</h4>
+                        <p>Recursa improves itself using its own framework. We practice what we preach.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section section-cta">
+        <div class="container center">
+            <h2 class="section-title">Ready to build something that learns?</h2>
+            <p class="section-subtitle">Clone the repo, bootstrap your first project, and start iterating.</p>
+            <div class="cta-buttons">
+                <a href="https://github.com/dhuree/recursa" class="btn btn-primary btn-large">
+                    View on GitHub
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                        <path d="M3 8H13M13 8L8 3M13 8L8 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="cta-note">
+                <em>To understand recursion, you must first understand recursion.<br>
+                Luckily, we wrote documentation.</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="/" class="nav-logo">
+                        <svg class="logo-mark" width="24" height="24" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="14" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 8C16 12.4183 12.4183 16 8 16C12.4183 16 16 19.5817 16 24C16 19.5817 19.5817 16 24 16C19.5817 16 16 12.4183 16 8Z" fill="currentColor"/>
+                        </svg>
+                        <span>Recursa</span>
+                    </a>
+                    <p>Systems that learn to improve themselves.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-col">
+                        <h4>Resources</h4>
+                        <a href="/docs.html">Documentation</a>
+                        <a href="#examples">Examples</a>
+                        <a href="https://github.com/dhuree/recursa">GitHub</a>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Community</h4>
+                        <a href="https://github.com/dhuree/recursa/discussions">Discussions</a>
+                        <a href="https://github.com/dhuree/recursa/issues">Issues</a>
+                        <a href="https://twitter.com/recursa">Twitter</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>MIT License • Built with Recursa (naturally)</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/scripts/main.js"></script>
+</body>
+</html>
