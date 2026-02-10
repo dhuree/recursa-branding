@@ -15,7 +15,7 @@ From Latin *recursus*, meaning "a running back" or "return." The name embodies t
 | Primary brand | Recursa |
 | Repository | recursa |
 | Package name | recursa |
-| Domain | recursa.dev (target) |
+| Domain | recursa.net |
 | Social handles | @recursa |
 | Formal reference | The Recursa Framework |
 
